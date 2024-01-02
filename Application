@@ -1,0 +1,46 @@
+class Application {
+	public static void main(String[] args)
+	{
+		Car c = new Car();
+		//First Car Details
+		c.name = "BMW";
+		c.color = "Black";
+		c.price = 7000000;
+		c.stop();
+		c.drive();
+		c.onAC();
+		System.out.println("Name:"+c.name);
+		System.out.println("Color:"+c.color);
+		System.out.println("Price:"+c.price);
+		System.out.println("");
+		// Second Car Details
+		c.name = "HondaCity";
+		c.color = "White";
+		c.price = 4000000;
+		c.stop();
+		c.drive();
+		c.onAC();
+		System.out.println("Name:"+c.name);
+		System.out.println("Color:"+c.color);
+		System.out.println("Price:"+c.price);
+		}
+}
+class Car {
+	String name;
+	String color;
+	long price;
+	public void stop()
+	{
+		System.out.println("Please Stop the car");
+	}
+	public void drive()
+	{
+		System.out.println("Please Drive the car");
+	}
+	public void onAC()
+	{
+		System.out.println("Please turn on the AC");
+	}
+	
+
+}
